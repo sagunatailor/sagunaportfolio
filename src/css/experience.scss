@@ -1,0 +1,94 @@
+div.experience {
+    display: flex;
+}
+ul.experience {
+    margin: 20px 0 50px;
+    list-style: none;
+    position: relative;
+    padding: 0 0 0 101px;
+    width: 100%;
+    li {
+        position: relative;
+        margin-left: 10px;
+        padding: 0 20px;
+        -webkit-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        &:not(:first-child) {
+            margin-top: 60px;
+        }
+        span.line-left {
+            width: 2px;
+            height: 100%;
+            background-color: hotpink;
+            left: -10px;
+            top: 0;
+            position: absolute;
+            display: inline-block;
+            &:before,
+            &:after {
+                border-color: hotpink;
+                box-sizing: border-box;
+                content: "";
+                width: 10px;
+                height: 10px;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+                border: 2px solid hotpink;
+                position: absolute;
+                left: -4px;
+                top: -10px;
+            }
+            &:after {
+                top: 100%;
+            }
+        }
+        .content {
+            margin-left: 10px;
+            h4, h5 {
+                margin: 0;
+                color: #ffffff;
+            }
+            h4 {
+                font-size: 23px;
+                line-height: 1.7;;
+            }
+            h5 {
+                margin: 0;
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+        span.year {
+            height: 100%;
+            width: 100%;
+            left: -10px;
+            top: 0;
+            position: absolute;
+            display: inline-block;
+            span {
+                font-size: 16px;
+                position: absolute;
+                -webkit-transform: translateX(-120%);
+                -ms-transform: translateX(-120%);
+                transform: translateX(-120%);
+                color: #ffffff;
+                &.to {
+                    top: -18px;
+                }
+                &.from {
+                    bottom: -18px;
+                }
+            }
+        }
+      }
+}
+@media (max-width: 768px) {
+    div.experience {
+        flex-direction:column;
+        ul.experience {
+            width: auto;
+        }
+    }
+
+}

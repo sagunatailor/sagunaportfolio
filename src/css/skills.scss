@@ -1,0 +1,92 @@
+
+.skills-section {
+    justify-content: space-between;
+    display: flex;
+    margin: 30px 0 0 0;
+    h6 {
+        color: white;
+        margin: 0 0 14px;
+      }
+      > div {
+        color: white;
+        margin: 0;
+        > div {
+            margin: 0 0 56px;
+        }
+      }
+      .skill-progress {
+        height: 7px;
+        border-radius: 3px;
+        background-color: white;
+        > div {
+            height: 7px;
+            border-radius: 3px;
+            background-color: hotpink;
+            span {
+                padding: 12px 0 0 0;
+                display: flex;
+                font-size: 15px;
+            }
+        }
+        &.length-90 > div {
+            width:90%;
+
+            animation-name: grow90;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+        }
+        &.length-85 > div {
+            width:85%;
+
+            animation-name: grow85;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+        }
+        &.length-80 > div {
+            width:80%;
+
+            animation-name: grow80;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+        }
+        &.length-75 > div {
+            width:75%;
+
+            animation-name: grow75;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+          }
+        &.length-60 > div {
+            width:60%;
+
+            animation-name: grow60;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+        }
+        @keyframes grow60 {
+            0%   {background-color:greenyellow; width: 0}
+            100%  {width:60%}
+        }
+        @keyframes grow75 {
+            0%   {background-color:greenyellow; width: 0}
+            100%  {width:75%}
+        }
+        @keyframes grow80 {
+            0%   {background-color:greenyellow; width: 0}
+            100%  {width:80%}
+        }
+        @keyframes grow85 {
+            0%   {background-color:greenyellow; width: 0}
+            100%  {width:85%}
+        }
+        @keyframes grow90 {
+            0%   {background-color:greenyellow; width: 0}
+            100%  {width:90%}
+        }
+      }
+}
+@media (max-width: 920px) {
+    .skills .skills-section {
+        flex-direction: column;
+    }
+}
