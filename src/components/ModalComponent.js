@@ -1,34 +1,37 @@
 import react from 'react';
 import { useState } from 'react';
-import parse from "html-react-parser";
-import Modal from "react-bootstrap/Modal";
-import Button from "react-bootstrap/Button";
+import parse from 'html-react-parser';
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
 
-
-function ModalComponent ({ showValue, content, title, image, screenshots}) {
+function ModalComponent({ showValue, content, title, image, screenshots }) {
   function handleShow() {
     setShow(true);
   }
   const [show, setShow] = useState(false);
 
-    return (
-      <>
+  return (
+    <>
       <Button className='button' onClick={() => handleShow(true)}>
-          <figure><img alt={title} src={image} /></figure>
+        <figure>
+          <img alt={title} src={image} />
+        </figure>
       </Button>
-      <Modal show={showValue} fullscreen={true} onHide={() => setShow(false)}>
+      <Modal show={show} fullscreen={true} onHide={() => setShow(false)}>
         <Modal.Header closeButton>
           <Modal.Title>{title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {parse(content)}
-          {screenshots.map((image, idx) => (
-            <figure key={idx}><img alt={title} src={image} /></figure>
+          {screenshots.map((pic, idx) => (
+            <figure key={idx}>
+              <img alt={title} width='auto' src={pic} />
+            </figure>
           ))}
         </Modal.Body>
       </Modal>
-      </>
-    );
-};
+    </>
+  );
+}
 
 export default ModalComponent;

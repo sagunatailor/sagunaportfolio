@@ -1,8 +1,3 @@
-import { useState } from 'react';
-import parse from "html-react-parser";
-import Modal from "react-bootstrap/Modal";
-import Button from "react-bootstrap/Button";
-
 import bmaLogo from '../images/logos/bma.jpg';
 import bmt from '../images/logos/bmt.jpg';
 import capita from '../images/logos/capita.jpg';
@@ -10,6 +5,11 @@ import bwin from '../images/logos/bwin.jpg';
 import orange from '../images/logos/orange.jpg';
 import concep from '../images/logos/concep.jpg';
 import theGroup from '../images/logos/the-group.jpg';
+
+import bma1 from '../images/portfolio/bma1.png';
+import bma2 from '../images/portfolio/bma2.png';
+import bma3 from '../images/portfolio/bma3.png';
+import bma4 from '../images/portfolio/bma4.png';
 
 import bwin1 from '../images/portfolio/bwin1.jpg';
 import bwin2 from '../images/portfolio/bwin2.jpg';
@@ -51,7 +51,7 @@ function Portfolio() {
         image: bmaLogo,
         title: 'British Medical Association',
         content: '<p>I Work on the maintenance and creation of <a href=`http://www.bestpractice.bmj.com` target=`_blank`>www.bestpractice.bmj.com</a>, <a href=`http://www.new-learning.bmj.com` target=`_blank`>www.new-learning.bmj.com</a></p>. <ul><li>I work with Backend developers and UX designers to update and create websites.</li><li>I work in Agile scrum teams across the Tech department to update the various websites.</li><li>Consulting and carrying out frontend GUI feature requests and bug fixes.</li><li>Work from PSD wireframes and Figma designs to create websites from scratch.</li><li>Liaise with several teams to organise each step of a new site launch including deployment of the site via AWS.</li><li>Built front-end websites using React JS, HTML, SASS, GitHub</li><li>Work on with multiple Agile teams on multiple websites simultaneously as the sole front end web developer for the department. At times I was triple sprinting!</li><li>Worked remotely with teams based across the globe (India) to update the journal websites.</li><li>I act as the main point of contact for all front end related issues on any of the websites.</li><li>I improve the sites to ensure they are fully scalable, accessible and mobile / tablet responsive for all devices.</li><li>We use Git repositories for all website builds and updates.</li><li>Peer reviewing developers code to ensure it`s clear, clean and maintainable by all.</li><li>Learning new React and Front end code and sharing findings with team mate`s in our weekly learning sessions / meetings.</li></ul>',
-        screenshots: []
+        screenshots: [bma1, bma2, bma3, bma4]
       },
       {
         image: bwin,
@@ -92,137 +92,20 @@ function Portfolio() {
       }
     ];
 
-  function handleShowBMA() {
-    setShowBMA(true);
-  }
-  function handleShowBWIN() {
-    setShowBWIN(true);
-  }
-  function handleShowConcep() {
-    setShowConcep(true);
-  }
-  function handleShowBMT() {
-    setShowBMT(true);
-  }
-  function handleShowTheGroup() {
-    setShowTheGroup(true);
-  }
-  function handleShowOrange() {
-    setShowOrange(true);
-  }
-  function handleShowCapita() {
-    setShowCapita(true);
-  }
-  const [showBMA, setShowBMA] = useState(false);
-  const [showBWIN, setShowBWIN] = useState(false);
-  const [showConcep, setShowConcep] = useState(false);
-  const [showBMT, setShowBMT] = useState(false);
-  const [showTheGroup, setShowTheGroup] = useState(false);
-  const [showOrange, setShowOrange] = useState(false);
-  const [showCapita, setShowCapita] = useState(false);
-
-console.log('showBMA',showBMA);
     return (
       <section id='portfolio'>
-      <br/>
-      <br/>
-      <h2>Portfolio</h2>
-      <div className='portfolio'>
-            {/* <Button className='button' onClick={() => handleShowBMA(true)}>
-                <figure><img alt={content[0].title} src={content[0].image} /></figure>
-            </Button>
-            <Button className='button' onClick={() => handleShowBWIN(true)}>
-                <figure><img alt={content[1].title} src={content[1].image} /></figure>
-            </Button>
-            <Button className='button' onClick={() => handleShowConcep(true)}>
-                <figure><img alt={content[2].title} src={content[2].image} /></figure>
-            </Button>
-            <Button className='button' onClick={() => handleShowBMT(true)}>
-                <figure><img alt={content[3].title} src={content[3].image} /></figure>
-            </Button>
-            <Button className='button' onClick={() => handleShowTheGroup(true)}>
-                <figure><img alt={content[4].title} src={content[4].image} /></figure>
-            </Button>
-            <Button className='button' onClick={() => handleShowOrange(true)}>
-                <figure><img alt={content[5].title} src={content[5].image} /></figure>
-            </Button>
-            <Button className='button' onClick={() => handleShowCapita(true)}>
-                <figure><img alt={content[6].title} src={content[6].image} /></figure>
-            </Button> */}
+        <br/><br/>
+        <h2>Portfolio</h2>
+        <div className='portfolio'>
 
-      <ModalComponent showValue={showBMA} content={content[0].content} title={content[0].title} screenshots={content[0].screenshots} setShow={showBMA}/>
+          <ModalComponent content={content[0].content} title={content[0].title} screenshots={content[0].screenshots} image={content[0].image}/>
+          <ModalComponent content={content[1].content} title={content[1].title} screenshots={content[1].screenshots} image={content[1].image}/>
+          <ModalComponent content={content[2].content} title={content[2].title} screenshots={content[2].screenshots} image={content[2].image}/>
+          <ModalComponent content={content[3].content} title={content[3].title} screenshots={content[3].screenshots} image={content[3].image}/>
+          <ModalComponent content={content[4].content} title={content[4].title} screenshots={content[4].screenshots} image={content[4].image}/>
+          <ModalComponent content={content[5].content} title={content[5].title} screenshots={content[5].screenshots} image={content[5].image}/>
+          <ModalComponent content={content[6].content} title={content[6].title} screenshots={content[6].screenshots} image={content[6].image}/>
 
-
-      <Modal show={showBMA} fullscreen={true} onHide={() => setShowBMA(false)}>
-        <Modal.Header closeButton>
-          <Modal.Title>{content[0].title}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          {parse(content[0].content)}
-        </Modal.Body>
-      </Modal>
-
-      <Modal show={showBWIN} fullscreen={true} onHide={() => setShowBWIN(false)}>
-        <Modal.Header closeButton>
-          <Modal.Title>{content[1].title}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          {parse(content[1].content)}
-          {content[1].screenshots.map((image, idx) => (
-            <figure key={idx}><img alt='bwin' src={image} /></figure>
-          ))}
-        </Modal.Body>
-      </Modal>
-
-      <Modal show={showConcep} fullscreen={true} onHide={() => setShowConcep(false)}>
-        <Modal.Header closeButton>
-          <Modal.Title>{content[2].title}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>{parse(content[2].content)}
-          {content[2].screenshots.map((image, idx) => (
-            <figure key={idx}><img alt='concep' src={image} /></figure>
-          ))}</Modal.Body>
-      </Modal>
-
-      <Modal show={showBMT} fullscreen={true} onHide={() => setShowBMT(false)}>
-        <Modal.Header closeButton>
-          <Modal.Title>{content[3].title}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>{parse(content[3].content)}
-          {content[3].screenshots.map((image, idx) => (
-            <figure key={idx}><img alt='BMT' src={image} /></figure>
-          ))}</Modal.Body>
-      </Modal>
-
-      <Modal show={showTheGroup} fullscreen={true} onHide={() => setShowTheGroup(false)}>
-        <Modal.Header closeButton>
-          <Modal.Title>{content[4].title}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>{parse(content[4].content)}
-          {content[4].screenshots.map((image, idx) => (
-            <figure key={idx}><img alt='the group' src={image} /></figure>
-          ))}</Modal.Body>
-      </Modal>
-
-      <Modal show={showOrange} fullscreen={true} onHide={() => setShowOrange(false)}>
-        <Modal.Header closeButton>
-          <Modal.Title>{content[5].title}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>{parse(content[5].content)}
-          {content[5].screenshots.map((image, idx) => (
-            <figure key={idx}><img alt='orange' src={image} /></figure>
-          ))}</Modal.Body>
-      </Modal>
-
-      <Modal show={showCapita} fullscreen={true} onHide={() => setShowCapita(false)}>
-        <Modal.Header closeButton>
-          <Modal.Title>{content[6].title}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>{parse(content[6].content)}
-          {content[6].screenshots.map((image, idx) => (
-            <figure key={idx}><img alt='capita' src={image} /></figure>
-          ))}</Modal.Body>
-      </Modal>
         </div>
       </section>
     );
