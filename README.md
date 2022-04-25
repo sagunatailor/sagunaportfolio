@@ -1,3 +1,11 @@
+build a site to production:
+npm run build
+npm install -g serve
+serve -s build
+
+https://www.000webhost.com/members/website/sagunatailor/build
+https://react-bootstrap.github.io/components/modal/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
