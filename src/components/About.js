@@ -23,11 +23,11 @@ function About() {
               Developer since 2005. I have worked for footsie 100 index
               companies to start-ups. I have worked for a wide variety of
               sectors including: Gambeling, Finance, Medical, Agencies,
-              Maritime, Marketing. I am a reliable, hard working team player who
+              Maritime and Marketing. I am a reliable, hard working team player who
               is looking for a role that has a good work / life balance. I
               really enjoy learning new skills. I live in East London. My
               hobbies include spending time with my children, travelling,
-              theatre, gardening, cycling, trekking, knitting and eating.
+              theatre, gardening, cycling, trekking, knitting and reading.
             </p>
           </div>
         </div>

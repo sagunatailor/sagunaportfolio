@@ -9,16 +9,7 @@ function Skills() {
       <h2>Skills</h2>
       <div className='skills'>
         <p>
-          My main skills day to day lie in HTML, CSS / SASS, React and
-          Javascript. I am used to working Agile with dialy stand-ups and two
-          weeks sprints. I can work to tight deadlines and under pressure. I'm
-          usually the only Front-end developer so I am used to managing my own
-          workloads, time and liasing with different departments. I have
-          experience working along side UX / Designers / Back-end developers /
-          Project managers / Copy writters and accross other departments too. I
-          often have to explain my work under strict code reviews so I have good
-          communication skils and attention to detail. I am collaborative,
-          hardworking and communicative.
+        My main skills day to day lie in HTML, CSS / SASS, React and Javascript. I am used to working Agile with daily stand-ups and two week sprints. I can work to tight deadlines and under pressure. I'm usually the only Front-end developer so I am used to managing my own workloads, time and liaising with different departments. I have experience working alongside UX / Designers / Back-end developers / Project managers / Copy writers and across other departments too. I often have to explain my work under strict code reviews so I have good communication skills and attention to detail. I am collaborative, hardworking and communicative.
         </p>
         <div className='skills-section'>
           <div>

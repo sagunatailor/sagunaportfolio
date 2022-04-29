@@ -17,14 +17,14 @@ function Experience() {
               <p className='info'>
                 This role includes creating and building React sites from
                 scratch. Deploying sites using AWS and Github. Working with
-                Github repositaires. I also work with Jenkins to deploy branches
+                Github repositories. I also work with Jenkins to deploy branches
                 to Development for testing. Write Jest and Cypress tests for
                 React code. I mainly use SASS and Javascript within the project.
-                I have worked on multiple sites accross the company. Jumping
+                I have worked on multiple sites across the company. Jumping
                 between Gulp, Grunt, SASS, LESS, Java projects and React. Often
                 being the only Front end web developer in the department, I'm
                 being shared between projects so multi-tasking and hitting
-                deadlines is a must as its usually Agile working to two week
+                deadlines is a must as it's usually Agile working to two week
                 sprints. I have learnt to work under extreme stress and pressure
                 and this has enabled me to learn fast and keep current!
               </p>
@@ -50,9 +50,9 @@ function Experience() {
                 at the final stage of the production. I worked from PSD wire
                 frames to create websites / Landing pages from scratch that are
                 mobile responsive. I worked in an Agile environment with daily
-                sand-ups and review meetings. I migrated sites from PHP into CQ5
-                with white labels. I co-ordinate with localisation teams for
-                multi-lingual sites.
+                stand-ups and review meetings. I migrated sites from PHP into
+                CQ5 with white labels. I co-ordinate with localisation teams for
+                multilingual sites.
               </p>
             </div>
             <span className='year'>
@@ -86,12 +86,7 @@ function Experience() {
               <h4>Front-end Web Developer</h4>
               <h5>British Maritime Technicians</h5>
               <p className='info'>
-                BMT is an international engineering, science and technology
-                consultancy. I managed all 32 subsidiary company websites as
-                well as the intranet site using their CMS. I dealt with queries,
-                created new areas/sites/micro-sites, converted paper-based
-                magazines to online. I managed domain name registrations and
-                renewals.{' '}
+                BMT is an international engineering, science and technology consultancy. I managed all 32 subsidiary company websites as well as the intranet site using their CMS. I dealt with queries, created new areas/sites/microsites, converted paper-based magazines to online. I managed domain name registrations and renewals.{' '}
               </p>
             </div>
             <span className='year'>
@@ -129,7 +124,7 @@ function Experience() {
                 I worked as a member of the web technology team using XHTML, CSS
                 and Dreamweaver. Working to strict AAA W3C standards and web
                 content accessibility guidelines as well as coding for cross
-                browser compatibility.Worked to strict deadlines while
+                browser compatibility. Worked to strict deadlines while
                 maintaining a consistently high standard of accuracy. Barclays,
                 Centrica, Aviva, Prudential and Kingfisher are just some of the
                 brands I created online annual reports for.
@@ -151,7 +146,7 @@ function Experience() {
                 and professional services company. I had to Liaise with various
                 clients to scope, develop and maintain projects for the intranet
                 and create micro-sites using Dreamweaver and XHTML. I also had
-                to prepared graphics for banners, icons and buttons using
+                to prepare graphics for banners, icons and buttons using
                 Fireworks. I enjoyed running one-to-one contribute training for
                 department heads.
               </p>
