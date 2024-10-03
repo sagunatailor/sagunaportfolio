@@ -3,6 +3,10 @@ npm run build
 npm install -g serve
 serve -s build
 
+
+PUBLIC URL IS: https://html-preview.github.io/?url=https://github.com/sagunatailor/portfolio/blob/main/index.html
+
+
 https://www.000webhost.com/members/website/sagunatailor/build
 https://react-bootstrap.github.io/components/modal/
 
